@@ -1,0 +1,247 @@
+:root{
+    /* ### Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+/* ### Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body{
+    background-image: url(/img/bg-header-mobile.png);
+    background-repeat: no-repeat;
+}
+
+.header{
+    text-align: center;
+}
+
+.header__logo{
+    width: 12rem;
+    margin: 15rem 0 4rem;
+}
+
+.header__title{
+    margin: 0 3rem;
+    font-size: 3rem;
+}
+
+.header__paragraph{
+    margin: 2rem 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.header__botons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__boton{
+    display: grid;
+    place-content: center;
+    width: 85%;
+    height: 5.6rem;
+    text-decoration: none;
+    background-color: var(--Light-Blue);
+    border-radius: 2.8rem;
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 1px 1px 5px var(--Dark-Grayish-Blue);
+}
+
+.header__boton:first-child{
+    background-color: var(--Strong-Cyan);
+    margin-bottom: 2rem;
+}
+
+.header__subtitle{
+    margin-top: 10rem;
+    padding: 0 3.5rem;
+    font-size: 2.8rem;
+}
+
+.section{
+    text-align: center;
+}
+
+.section__img{
+    text-align: center;
+    padding: 1.5rem;
+    margin: 5rem 0;
+}
+
+.comp{
+    width: 100%;
+}
+
+.text__title{
+    margin-top: 6rem;
+    font-size: 2.5rem;
+}
+
+.section__divices{
+    width: 100%;
+}
+
+.box__info{
+    margin: 8rem 0;
+}
+
+.info__title{
+    margin-top: 3rem;
+}
+
+.section__company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company__logo{
+    margin: 3rem 0;
+    width: 12rem;
+}
+
+.footer{
+    margin-top: 9rem;
+    background-color: rgb(234, 234, 243);
+    padding: 3rem;
+    text-align: center;
+}
+
+.box__logo{
+    width: 6rem;
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__text{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+
+.box:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.icon__img{
+    display: block;
+    margin: 0 1rem;
+}
+
+.info__text:hover{
+    color: var(--Strong-Cyan);
+}
+
+.icon__img:hover{
+    color: var(--Strong-Cyan);
+}
+
+/*RESPONSIVE*/
+/* Móviles en horizontal o tablets en vertical */
+@media (min-width: 768px){
+    body{
+        background-image: url(/img/bg-header-desktop.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header{
+        max-height: 100vh;
+    }
+
+    .header__botons{
+        flex-direction: row;
+    }
+
+    .header__boton:first-child{
+        margin-bottom: 0rem;
+        margin-right: 2rem;
+    }
+
+    .section:first-child{
+        margin-top: 6rem;
+        display: flex;
+    }
+    .header__paragraph{
+        max-width: 50vw;
+    }
+    
+    .section__text{
+        text-align: left;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        margin-right: 10%;
+    }
+
+    .text__paragraph{
+        margin: 0;
+    }
+
+    .section:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__divices{
+        max-width: 55vw;
+    }
+
+    .box__info{
+        display: flex;
+        max-width: 80vw;
+    }
+    .section__company{
+        flex-direction: row;
+        max-width: 90vw;
+    }
+
+    .company__logo{
+        margin: 0 3rem;
+    }
+    .section:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        max-width: 100vw;
+        width: 100%;
+        padding: 3rem 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        display: flex;
+        text-align: left;
+    }
+    .info__text{
+        margin: 0 2.5rem;
+    }
+
+
+}
