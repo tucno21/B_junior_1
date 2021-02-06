@@ -4,28 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+  <div class="container">
+    <section class="card">
+      <img src="/img/logo.svg" alt="logo" class="card__logo">
+      <div class="card__icon">
+        <img src="./img/icon-document.svg" alt="icon" class="icon">
+        <img src="./img/icon-folder.svg" alt="icon" class="icon">
+        <img src="/img/icon-upload.svg" alt="icon" class="icon">
+      </div>
+    </section>
 
-  You’ve used 815 GB of your storage
+    <section class="card">
+      <h3 class="card__title">You’ve used <span>815 GB</span> of your storage</h3>
+      <div class="card__bar">
+        <div class="card__bar--bar">
+          <div class="circle">
+          </div>
+        </div>
+      </div>
+      <div class="card__limit">
+        <h3 class="card__limit-min">0 GB</h3>
+        <h3 class="card__limit-max">1000 GB</h3>
+      </div>
+      <h3 class="card__info"><span>185</span> GB Left</h3>
+    </section>
+  </div>
 
-  185 GB Left
   
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
